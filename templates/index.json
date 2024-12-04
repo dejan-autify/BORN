@@ -14,12 +14,12 @@
       "settings": {
         "image": "shopify://shop_images/banner1_2a4d8f54-f927-4bb6-a370-086c22b7d8e4.png",
         "heading_1": "Engagement  Rings",
+        "small_text_1": "BORN LAB—GROWN",
         "button_text_1": "Browse Engagement rings",
-        "button_link_1": "",
         "image_2": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5024___14-01-01-5008___14-01-01-5074___14-01-01-5016_a.png",
         "heading_2": "Browse our new  festive gift guide",
-        "button_text_2": "Browse Gifts",
-        "button_link_2": ""
+        "small_text_2": "BORN LAB—GROWN",
+        "button_text_2": "Browse Gifts"
       }
     },
     "custom_text_carousal_MhTYP7": {
