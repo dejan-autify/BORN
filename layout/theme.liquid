@@ -48,6 +48,15 @@
     %}
 
     {% style %}
+      @font-face {
+        font-family: 'Axiforma';
+        src: url('/assets/fonts/Axiforma-Bold.woff2') format('woff2'),
+             url('/assets/fonts/Axiforma-Bold.woff') format('woff'),
+             url('/assets/fonts/Axiforma-Bold.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+      }
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
