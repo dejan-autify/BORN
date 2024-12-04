@@ -29,11 +29,31 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "heading_j8U7TB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our new festive gift guide",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_Lymdzh": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Browse Gifts",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "heading",
-        "button"
+        "button",
+        "heading_j8U7TB",
+        "buttons_Lymdzh"
       ],
       "settings": {
         "image": "shopify://shop_images/banner1_2a4d8f54-f927-4bb6-a370-086c22b7d8e4.png",
