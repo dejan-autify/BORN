@@ -1,6 +1,153 @@
+<style>
+.banner--two-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.banner__images {
+  display: flex;
+  width: 100%;
+}
+
+.banner__image {
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__media-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner__heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.banner__image:hover .button {
+  background-color: #444; /* Example hover effect */
+}
+
+</style>
+
+<div
+  id="Banner-{{ section.id }}"
+  class="banner banner--two-images {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+>
+  <div class="banner__images">
+    {%- if section.settings.image != blank -%}
+      <div class="banner__image banner__image--left">
+        {{
+          section.settings.image
+          | image_url: width: 1920
+          | image_tag: 'banner__media-image'
+        }}
+        <div class="banner__content">
+          <h2 class="banner__heading">{{ section.settings.heading_1 }}</h2>
+          <a href="{{ section.settings.button_link_1 }}" class="button">
+            {{ section.settings.button_text_1 }}
+          </a>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.image_2 != blank -%}
+      <div class="banner__image banner__image--right">
+        {{
+          section.settings.image_2
+          | image_url: width: 1920
+          | image_tag: 'banner__media-image'
+        }}
+        <div class="banner__content">
+          <h2 class="banner__heading">{{ section.settings.heading_2 }}</h2>
+          <a href="{{ section.settings.button_link_2 }}" class="button">
+            {{ section.settings.button_text_2 }}
+          </a>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Two Image Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "First Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "label": "Heading for First Image"
+    },
+    {
+      "type": "text",
+      "id": "button_text_1",
+      "label": "Button Text for First Image"
+    },
+    {
+      "type": "url",
+      "id": "button_link_1",
+      "label": "Button Link for First Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Second Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "Heading for Second Image"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "label": "Button Text for Second Image"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Button Link for Second Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two Images",
+      "category": "Banner"
+    }
+  ]
+}
 {% endschema %}
+
