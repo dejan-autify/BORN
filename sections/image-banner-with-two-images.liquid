@@ -56,7 +56,6 @@
 .banner__image:hover .button {
   background-color: #444; /* Example hover effect */
 }
-
 </style>
 
 <div
@@ -66,7 +65,11 @@
   <div class="banner__images">
     {%- if section.settings.image != blank -%}
       <div class="banner__image banner__image--left">
-       <img src="{{ section.settings.image }}" alt="" class="banner__media-image" width="1920px" height="1920px">
+        <img 
+          src="{{ section.settings.image | image_url: width: 1920 }}" 
+          alt="{{ section.settings.heading_1 }}" 
+          class="banner__media-image"
+        />
         <div class="banner__content">
           <h2 class="banner__heading">{{ section.settings.heading_1 }}</h2>
           <a href="{{ section.settings.button_link_1 }}" class="button">
@@ -78,7 +81,11 @@
 
     {%- if section.settings.image_2 != blank -%}
       <div class="banner__image banner__image--right">
-         <img src="{{ section.settings.image }}" alt="" class="banner__media-image">
+        <img 
+          src="{{ section.settings.image_2 | image_url: width: 1920 }}" 
+          alt="{{ section.settings.heading_2 }}" 
+          class="banner__media-image"
+        />
         <div class="banner__content">
           <h2 class="banner__heading">{{ section.settings.heading_2 }}</h2>
           <a href="{{ section.settings.button_link_2 }}" class="button">
@@ -89,9 +96,10 @@
     {%- endif -%}
   </div>
 </div>
+
 {% schema %}
 {
-  "name": "Two Image Banner",
+  "name": "Banner with Two Images",
   "settings": [
     {
       "type": "image_picker",
@@ -136,10 +144,9 @@
   ],
   "presets": [
     {
-      "name": "Two Images",
+      "name": "Two Images with Content",
       "category": "Banner"
     }
   ]
 }
 {% endschema %}
-
