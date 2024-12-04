@@ -1,6 +1,78 @@
+<style>
+.text-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.text-carousel__item {
+  display: inline;
+  margin: 0 10px;
+}
+
+.text-carousel__dot {
+  margin: 0 5px;
+  color: #aaa;
+}
+
+.text-carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+</style>
+
+<div class="text-carousel-container">
+  {% if section.settings.show_carousel %}
+  <div id="TextCarousel-{{ section.id }}" class="text-carousel">
+    {%- for block in section.blocks -%}
+    <span class="text-carousel__item">{{ block.settings.text }}</span>
+    {%- if forloop.last == false -%}
+    <span class="text-carousel__dot">•</span>
+    {%- endif -%}
+    {%- endfor -%}
+  </div>
+  {% endif %}
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Text Carousel",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_carousel",
+      "label": "Show Text Carousel",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "carousel_item",
+      "name": "Carousel Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Item Text",
+          "default": "Example Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text Carousel",
+      "category": "Custom Sections"
+    }
+  ]
+}
 {% endschema %}
