@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "image_banner_with_two_images_3tpxqa": {
+      "type": "image-banner-with-two-images",
+      "settings": {
+        "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-01-01-5016.png",
+        "heading_1": "",
+        "button_text_1": "",
+        "button_link_1": "",
+        "heading_2": "",
+        "button_text_2": "",
+        "button_link_2": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -55,6 +67,7 @@
         "heading_j8U7TB",
         "buttons_Lymdzh"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/banner1_2a4d8f54-f927-4bb6-a370-086c22b7d8e4.png",
         "image_2": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5024___14-01-01-5008___14-01-01-5074___14-01-01-5016_a.png",
@@ -100,6 +113,7 @@
     }
   },
   "order": [
+    "image_banner_with_two_images_3tpxqa",
     "image_banner",
     "featured_collection"
   ]

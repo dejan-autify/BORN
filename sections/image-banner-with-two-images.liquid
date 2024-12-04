@@ -66,11 +66,7 @@
   <div class="banner__images">
     {%- if section.settings.image != blank -%}
       <div class="banner__image banner__image--left">
-        {{
-          section.settings.image
-          | image_url: width: 1920
-          | image_tag: 'banner__media-image'
-        }}
+       <img src="{{ section.settings.image }}" alt="" class="banner__media-image">
         <div class="banner__content">
           <h2 class="banner__heading">{{ section.settings.heading_1 }}</h2>
           <a href="{{ section.settings.button_link_1 }}" class="button">
@@ -82,11 +78,7 @@
 
     {%- if section.settings.image_2 != blank -%}
       <div class="banner__image banner__image--right">
-        {{
-          section.settings.image_2
-          | image_url: width: 1920
-          | image_tag: 'banner__media-image'
-        }}
+         <img src="{{ section.settings.image }}" alt="" class="banner__media-image">
         <div class="banner__content">
           <h2 class="banner__heading">{{ section.settings.heading_2 }}</h2>
           <a href="{{ section.settings.button_link_2 }}" class="button">
