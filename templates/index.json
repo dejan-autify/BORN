@@ -13,12 +13,12 @@
       "type": "image-banner-with-two-images",
       "settings": {
         "image": "shopify://shop_images/banner1_2a4d8f54-f927-4bb6-a370-086c22b7d8e4.png",
-        "heading_1": "",
-        "button_text_1": "",
+        "heading_1": "Engagement  Rings",
+        "button_text_1": "Browse Engagement rings",
         "button_link_1": "",
         "image_2": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5024___14-01-01-5008___14-01-01-5074___14-01-01-5016_a.png",
-        "heading_2": "",
-        "button_text_2": "",
+        "heading_2": "Browse our new  festive gift guide",
+        "button_text_2": "Browse Gifts",
         "button_link_2": ""
       }
     },
