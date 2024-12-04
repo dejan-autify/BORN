@@ -115,9 +115,14 @@
         />
         <div class="banner__content">
           <h2 class="banner__heading">{{ section.settings.heading_1 }}</h2>
-          <a href="{{ section.settings.button_link_1 }}" class="button">
-            {{ section.settings.button_text_1 }}
-          </a>
+          <div class="button-container">
+            <a href="{{ section.settings.button_link_1 }}" class="button" data-mobile="true">
+              {{ section.settings.button_text_1 }}
+            </a>
+            <button class="button" data-desktop="true" style="display: none;">
+              {{ section.settings.button_text_1 }}
+            </button>
+          </div>
         </div>
       </div>
     {%- endif -%}
@@ -131,14 +136,45 @@
         />
         <div class="banner__content">
           <h2 class="banner__heading">{{ section.settings.heading_2 }}</h2>
-          <a href="{{ section.settings.button_link_2 }}" class="button">
-            {{ section.settings.button_text_2 }}
-          </a>
+          <div class="button-container">
+            <a href="{{ section.settings.button_link_2 }}" class="button" data-mobile="true">
+              {{ section.settings.button_text_2 }}
+            </a>
+            <button class="button" data-desktop="true" style="display: none;">
+              {{ section.settings.button_text_2 }}
+            </button>
+          </div>
         </div>
       </div>
     {%- endif -%}
   </div>
 </div>
+
+<script>
+  // JavaScript to toggle button behavior based on screen size
+  function updateButtonsForDevice() {
+    const isMobile = window.innerWidth <= 768; // Define mobile breakpoint
+
+    document.querySelectorAll('.button-container').forEach(container => {
+      const mobileButton = container.querySelector('[data-mobile="true"]');
+      const desktopButton = container.querySelector('[data-desktop="true"]');
+
+      if (isMobile) {
+        mobileButton.style.display = 'inline-block';
+        desktopButton.style.display = 'none';
+      } else {
+        mobileButton.style.display = 'none';
+        desktopButton.style.display = 'inline-block';
+      }
+    });
+  }
+
+  // Initial load
+  updateButtonsForDevice();
+
+  // Update on window resize
+  window.addEventListener('resize', updateButtonsForDevice);
+</script>
 
 {% schema %}
 {
