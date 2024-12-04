@@ -36,7 +36,7 @@
   text-align: center;
   color: white;
   max-width: 400px;
-    width: 100%;
+  width: 100%;
 }
 
 .banner__heading {
@@ -50,9 +50,10 @@
   color: #FFFFFF;
 }
 
-  .button:after {
-    box-shadow: unset !important;
-  }
+.button:after {
+  box-shadow: unset !important;
+}
+
 .button {
   width: 307px;
   height: 50px;
@@ -64,7 +65,29 @@
 .banner__image:hover .button {
   background-color: #444; /* Example hover effect */
 }
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .banner__images {
+    flex-direction: column; /* Stack the images vertically */
+  }
+
+  .banner__image {
+    max-width: 100%; /* Make images take full width */
+  }
+
+  .banner__heading {
+    font-size: 30px; /* Adjust font size for mobile */
+    line-height: 40px;
+  }
+
+  .button {
+    width: 200px; /* Adjust button size for mobile */
+    height: 40px;
+  }
+}
 </style>
+
 
 <div
   id="Banner-{{ section.id }}"
