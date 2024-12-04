@@ -22,6 +22,44 @@
         "button_link_2": ""
       }
     },
+    "custom_text_carousal_MhTYP7": {
+      "type": "Custom-Text-Carousal",
+      "blocks": {
+        "carousel_item_xtJTC6": {
+          "type": "carousel_item",
+          "settings": {
+            "text": "Love is Born"
+          }
+        },
+        "carousel_item_hGkXCr": {
+          "type": "carousel_item",
+          "settings": {
+            "text": "Zero Emissions"
+          }
+        },
+        "carousel_item_riYAbM": {
+          "type": "carousel_item",
+          "settings": {
+            "text": "Cultivating quality"
+          }
+        },
+        "carousel_item_k7JwLW": {
+          "type": "carousel_item",
+          "settings": {
+            "text": "At your service"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_item_xtJTC6",
+        "carousel_item_hGkXCr",
+        "carousel_item_riYAbM",
+        "carousel_item_k7JwLW"
+      ],
+      "settings": {
+        "show_carousel": true
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -115,6 +153,7 @@
   },
   "order": [
     "image_banner_with_two_images_3tpxqa",
+    "custom_text_carousal_MhTYP7",
     "image_banner",
     "featured_collection"
   ]
