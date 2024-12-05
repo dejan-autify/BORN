@@ -3566,14 +3566,3 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
-
-@font-face {
-  font-family: "Axiforma" !important;
-  src:url("Axiforma-Regular.woff2") format('woff2'),
-      url("Axiforma-Regular.woff") format('woff'),
-      url("Axiforma-Regular.ttf") format('truetype');
-}
-
-.multicolumn-list h3 {
-  font-family: "Axiforma" !important;
-}
