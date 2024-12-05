@@ -144,3 +144,21 @@
       top: 0%;
   }
 }
+
+.title-wrapper--mobile {
+  display: none; /* Hide mobile heading by default */
+}
+
+.title-wrapper--desktop {
+  display: block; /* Show desktop heading by default */
+}
+
+@media (max-width: 768px) {
+  .title-wrapper--desktop {
+    display: none; /* Hide desktop heading on mobile */
+  }
+
+  .title-wrapper--mobile {
+    display: block; /* Show mobile heading on mobile */
+  }
+}
