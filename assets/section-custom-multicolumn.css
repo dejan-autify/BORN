@@ -75,6 +75,7 @@
 
 .multicolumn .button:hover {
   background: #333333;
+  color: #FFFFFF;
 }
 /* 
 @media screen and (min-width: 750px) {
