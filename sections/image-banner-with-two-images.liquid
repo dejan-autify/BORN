@@ -211,11 +211,11 @@
       const desktopButton = container.querySelector('[data-desktop="true"]');
 
       if (isMobile) {
-        mobileButton.style.display = 'inline-block';
+        mobileButton.style.display = 'flex';
         desktopButton.style.display = 'none';
       } else {
         mobileButton.style.display = 'none';
-        desktopButton.style.display = 'inline-block';
+        desktopButton.style.display = 'flex';
       }
     });
   }
