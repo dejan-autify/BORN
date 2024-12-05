@@ -163,6 +163,9 @@
    .video-container .video-content {
         padding: 21px 39px;
     }
+
+  .video-container .video-content .content {
+    font-size: 30px;
 }
 
 .title-wrapper--mobile {
