@@ -110,10 +110,16 @@
   padding: 22px 296px;
 }
 
+@media only screen and (min-width: 1920px) {
+  .video-container .video-content {
+    padding: 22px 120px;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .video-container .video-content {
     padding: 22px 193px;
-}
+  }
 }
 
 @media only screen and (max-width: 768px) {
