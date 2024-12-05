@@ -243,3 +243,7 @@
     display: list-item;
   }
 }
+
+.media--transparent img {
+  position: unset !important;
+}
