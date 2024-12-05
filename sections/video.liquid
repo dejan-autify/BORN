@@ -132,14 +132,8 @@
       <div class="video-content">
           {% if section.settings.subheading_desktop != blank or section.settings.subheading_mobile != blank %}
               <div class="video-content">
-                <!-- Desktop Subheading -->
-                {% if section.settings.subheading_desktop != blank %}
-                  <p class="subheading desktop-subheading">{{ section.settings.subheading_desktop }}</p>
-                {% endif %}
-                
-                <!-- Mobile Subheading -->
-                {% if section.settings.subheading_mobile != blank %}
-                  <p class="subheading mobile-subheading">{{ section.settings.subheading_mobile }}</p>
+                {% if section.settings.subheading != blank %}
+                  <p class="subheading">{{ section.settings.subheading }}</p>
                 {% endif %}
               </div>
             {% endif %}
@@ -161,8 +155,13 @@
   "settings": [
     {
       "type": "text",
-      "id": "top_heading",
-      "label": "Top Heading"
+      "id": "heading_desktop",
+      "label": "Desktop Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_mobile",
+      "label": "Mobile Heading"
     },
     {
       "type": "select",
@@ -184,13 +183,8 @@
     },
     {
       "type": "text",
-      "id": "subheading_desktop",
-      "label": "Desktop Subheading"
-    },
-    {
-      "type": "text",
-      "id": "subheading_mobile",
-      "label": "Mobile Subheading"
+      "id": "subheading",
+      "label": "Subheading"
     },
     {
       "type": "richtext",
