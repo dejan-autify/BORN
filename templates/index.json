@@ -192,7 +192,8 @@
         "small_article_iPceQe": {
           "type": "small_article",
           "settings": {
-            "title": "Default Article Title",
+            "image": "shopify://shop_images/fashion_girl.png",
+            "title": "The Big Five Fall Fashion Trends",
             "category": "Fashion"
           }
         }
