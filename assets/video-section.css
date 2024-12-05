@@ -156,6 +156,9 @@
   .background-image-wrapper .background-image-color {
       top: 0%;
   }
+  .background-image-wrapper {
+        top: 40%;
+    }
 }
 
 .title-wrapper--mobile {
