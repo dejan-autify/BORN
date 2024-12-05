@@ -88,7 +88,7 @@
   text-align: center;
   color: #FFFFFF;
   cursor: pointer;
-  display: flex;
+  display: block;
 }
 
 .anchor {
@@ -100,7 +100,7 @@
   text-decoration-line: underline;
   text-decoration-style: solid;
   color: #FFFFFF;
-  display: flex;
+  display: block;
 }
 
 .button:hover {
@@ -211,11 +211,11 @@
       const desktopButton = container.querySelector('[data-desktop="true"]');
 
       if (isMobile) {
-        mobileButton.style.display = 'flex';
+        mobileButton.style.display = 'block';
         desktopButton.style.display = 'none';
       } else {
         mobileButton.style.display = 'none';
-        desktopButton.style.display = 'flex';
+        desktopButton.style.display = 'block';
       }
     });
   }
