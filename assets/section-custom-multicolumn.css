@@ -1,5 +1,12 @@
 .multicolumn .title {
   margin: 0;
+  font-family: Axiforma, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 50.69px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .multicolumn.no-heading .title {
