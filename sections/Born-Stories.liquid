@@ -152,17 +152,19 @@
       <!-- Small Articles -->
       <div class="small-articles">
         {% for block in section.blocks %}
-          <div class="small-article">
+          <a href="{{ block.settings.link }}" class="small-article">
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url: width: 200 }}" alt="Small Article Image">
             {% endif %}
-            {% if block.settings.title != blank %}
-              <h4 class="small-article-title">{{ block.settings.title }}</h4>
-            {% endif %}
-            {% if block.settings.category != blank %}
-              <p class="small-article-category">{{ block.settings.category }}</p>
-            {% endif %}
-          </div>
+            <div class="small-article-content">
+              {% if block.settings.title != blank %}
+                <h4 class="small-article-title">{{ block.settings.title }}</h4>
+              {% endif %}
+              {% if block.settings.category != blank %}
+                <p class="small-article-category">{{ block.settings.category }}</p>
+              {% endif %}
+            </div>
+          </a>
         {% endfor %}
       </div>
     </div>
@@ -217,6 +219,11 @@
           "id": "category",
           "label": "Article Category",
           "default": "Fashion"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Article Link"
         }
       ]
     }
