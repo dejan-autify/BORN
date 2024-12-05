@@ -60,63 +60,6 @@
         "show_carousel": true
       }
     },
-    "multicolumn_ywpAtF": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_zNKGKb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Ellipse_217.png",
-            "title": "Zero Emissions",
-            "text": "<p>All born® lab-grown diamonds are created with sustainable, zero-emissions energy<br/></p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_aXNwNc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a.png",
-            "title": "Cultivating Quality",
-            "text": "<p>Only the highest calibre of lab-grown diamonds make the cut<br/></p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_hEVYWU": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_2357898755.png",
-            "title": "At your service",
-            "text": "<p>Our aftercare service at born®<br/>is second to none</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_zNKGKb",
-        "column_aXNwNc",
-        "column_hEVYWU"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Born® Lab-grown Diamonds",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "Learn More",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "custom_multicolumn_L3cX8n": {
       "type": "custom-multicolumn",
       "blocks": {
@@ -173,66 +116,60 @@
         "padding_bottom": 36
       }
     },
-    "image_banner": {
-      "type": "image-banner",
+    "multicolumn_ywpAtF": {
+      "type": "multicolumn",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "column_zNKGKb": {
+          "type": "column",
           "settings": {
-            "heading": "Engagement Rings",
-            "heading_size": "h0"
+            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-07-01-0002.png",
+            "title": "Zero Emissions",
+            "text": "<p>All born® lab-grown diamonds are created with sustainable, zero-emissions energy<br/></p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "button": {
-          "type": "buttons",
+        "column_aXNwNc": {
+          "type": "column",
           "settings": {
-            "button_label_1": "Browse Engagement rings",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a.png",
+            "title": "Cultivating Quality",
+            "text": "<p>Only the highest calibre of lab-grown diamonds make the cut<br/></p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "heading_j8U7TB": {
-          "type": "heading",
+        "column_hEVYWU": {
+          "type": "column",
           "settings": {
-            "heading": "Browse our new festive gift guide",
-            "heading_size": "h1"
-          }
-        },
-        "buttons_Lymdzh": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Browse Gifts",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/shutterstock_2357898755.png",
+            "title": "At your service",
+            "text": "<p>Our aftercare service at born®<br/>is second to none</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "button",
-        "heading_j8U7TB",
-        "buttons_Lymdzh"
+        "column_zNKGKb",
+        "column_aXNwNc",
+        "column_hEVYWU"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/banner1_2a4d8f54-f927-4bb6-a370-086c22b7d8e4.png",
-        "image_2": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5024___14-01-01-5008___14-01-01-5074___14-01-01-5016_a.png",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "title": "Born® Lab-grown Diamonds",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Learn More",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection": {
@@ -267,9 +204,8 @@
   "order": [
     "image_banner_with_two_images_3tpxqa",
     "custom_text_carousal_MhTYP7",
-    "multicolumn_ywpAtF",
     "custom_multicolumn_L3cX8n",
-    "image_banner",
+    "multicolumn_ywpAtF",
     "featured_collection"
   ]
 }
