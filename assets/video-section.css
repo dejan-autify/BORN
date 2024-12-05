@@ -159,6 +159,10 @@
   .background-image-wrapper {
         top: 40%;
     }
+
+   .video-container .video-content {
+        padding: 21px 39px;
+    }
 }
 
 .title-wrapper--mobile {
