@@ -24,9 +24,9 @@
 {%- endif -%}
 
 {%- style -%}
-  #Banner-{{ section.id }}::after {
+  /* #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
-  }
+  } */
 {%- endstyle -%}
 
 {%- liquid
@@ -365,7 +365,7 @@
     {
       "type": "heading",
       "name": "t:sections.image-banner.blocks.heading.name",
-      "limit": 2,
+      "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
@@ -406,7 +406,7 @@
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
-      "limit": 2,
+      "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
@@ -439,7 +439,7 @@
     {
       "type": "buttons",
       "name": "t:sections.image-banner.blocks.buttons.name",
-      "limit": 2,
+      "limit": 1,
       "settings": [
         {
           "type": "text",

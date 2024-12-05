@@ -9,243 +9,76 @@
  */
 {
   "sections": {
-    "image_banner_with_two_images_3tpxqa": {
-      "type": "image-banner-with-two-images",
-      "settings": {
-        "image": "shopify://shop_images/banner1_2a4d8f54-f927-4bb6-a370-086c22b7d8e4.png",
-        "heading_1": "Engagement  Rings",
-        "small_text_1": "BORN LAB—GROWN",
-        "button_text_1": "Browse Engagement rings",
-        "image_2": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5024___14-01-01-5008___14-01-01-5074___14-01-01-5016_a.png",
-        "heading_2": "Browse our new  festive gift guide",
-        "small_text_2": "BORN LAB—GROWN",
-        "button_text_2": "Browse Gifts"
-      }
-    },
-    "custom_text_carousal_MhTYP7": {
-      "type": "Custom-Text-Carousal",
+    "image_banner": {
+      "type": "image-banner",
       "blocks": {
-        "carousel_item_xtJTC6": {
-          "type": "carousel_item",
+        "heading": {
+          "type": "heading",
           "settings": {
-            "text": "Love is Born"
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
           }
         },
-        "carousel_item_hGkXCr": {
-          "type": "carousel_item",
+        "button": {
+          "type": "buttons",
           "settings": {
-            "text": "Zero Emissions"
-          }
-        },
-        "carousel_item_riYAbM": {
-          "type": "carousel_item",
-          "settings": {
-            "text": "Cultivating quality"
-          }
-        },
-        "carousel_item_k7JwLW": {
-          "type": "carousel_item",
-          "settings": {
-            "text": "At your service"
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "carousel_item_xtJTC6",
-        "carousel_item_hGkXCr",
-        "carousel_item_riYAbM",
-        "carousel_item_k7JwLW"
+        "heading",
+        "button"
       ],
       "settings": {
-        "show_carousel": true
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
-    "custom_multicolumn_L3cX8n": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_3qD7az": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Ellipse_217.png",
-            "title": "Zero Emissions",
-            "text": "<p>All born® lab-grown diamonds are created with sustainable, zero-emissions energy<br/></p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_zEVz8M": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a.png",
-            "title": "Cultivating Quality",
-            "text": "<p>Only the highest calibre of lab-grown diamonds make the cut<br/></p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_nBUMKY": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_2357898755.png",
-            "title": "At your service",
-            "text": "<p>Our aftercare service at born®<br/>is second to none</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_3qD7az",
-        "column_zEVz8M",
-        "column_nBUMKY"
-      ],
+    "featured_collection": {
+      "type": "featured-collection",
       "settings": {
-        "title": "Born® Lab-grown Diamonds",
-        "heading_size": "h1",
-        "image_width": "full",
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Learn More",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 96,
+        "padding_top": 44,
         "padding_bottom": 36
-      }
-    },
-    "multicolumn_gLrFtx": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_63D6xL": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-07-01-0002.png",
-            "title": "Why Zero-Carbon? Glad you asked.",
-            "text": "<p>Gold star gifts for your Christmas lists that don’t compromise your conscience or cost the planet.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_UBgpYQ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a_1.png",
-            "title": "Announcing our new born® brand ambassador",
-            "text": "<p>Take a look at what’s hot right now in lab-grown jewellery and beyond with the expert eye of born® editor Mary Sloane.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_HYyJf8": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013_14-01-01-5024_14-01-01-5008_14-01-01-5074_14-01-01-5016_Image_2.png",
-            "title": "How to Choose the Right Diamond Shape for Your Hand Size",
-            "text": "<p>While personal style plays a significant role in selecting the perfect diamond shape, the size and proportions of …</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_63D6xL",
-        "column_UBgpYQ",
-        "column_HYyJf8"
-      ],
-      "settings": {
-        "title": "FEATURED STORIES",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 200
-      }
-    },
-    "video_hdMzYR": {
-      "type": "video",
-      "settings": {
-        "heading_desktop": "LATEST IN LAB-GROWN",
-        "heading_mobile": "LAB-GROWN",
-        "heading_size": "h0",
-        "subheading": "Lab–GROWN GUIDES",
-        "content": "<p>All you need to know about lab-grown Coloured Diamonds</p>",
-        "cover_image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a_2.png",
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "born_stories_w9rzFQ": {
-      "type": "Born-Stories",
-      "blocks": {
-        "small_article_iPceQe": {
-          "type": "small_article",
-          "settings": {
-            "image": "shopify://shop_images/fashion_girl.png",
-            "title": "The Big Five Fall Fashion Trends",
-            "category": "Fashion",
-            "link": ""
-          }
-        },
-        "small_article_i4NRfn": {
-          "type": "small_article",
-          "settings": {
-            "image": "shopify://shop_images/Image_24.png",
-            "title": "Born® store manager Jane gives her thoughts on trends in lab-grown",
-            "category": "TRENDING",
-            "link": ""
-          }
-        },
-        "small_article_WUWpQb": {
-          "type": "small_article",
-          "settings": {
-            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-07-01-0002_1.png",
-            "title": "Born® Features at LDN Fashion Show",
-            "category": "Fashion",
-            "link": ""
-          }
-        },
-        "small_article_9Ya9Up": {
-          "type": "small_article",
-          "settings": {
-            "image": "shopify://shop_images/14-01-01-5025_a.png",
-            "title": "Everything you need to know  lab-grown in detail",
-            "category": "LAB-grown guides",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "small_article_iPceQe",
-        "small_article_i4NRfn",
-        "small_article_WUWpQb",
-        "small_article_9Ya9Up"
-      ],
-      "settings": {
-        "heading": "BORN STORTIES",
-        "featured_image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-07-01-0002.png",
-        "featured_title": "Why Zero-Carbon? Glad you asked.",
-        "featured_category": "Lab-Grown Guides"
       }
     }
   },
   "order": [
-    "image_banner_with_two_images_3tpxqa",
-    "custom_text_carousal_MhTYP7",
-    "custom_multicolumn_L3cX8n",
-    "multicolumn_gLrFtx",
-    "video_hdMzYR",
-    "born_stories_w9rzFQ"
+    "image_banner",
+    "featured_collection"
   ]
 }

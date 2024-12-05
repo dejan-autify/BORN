@@ -1,160 +1,16 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
-{% if template == "index" %}
-  <style>
-    .multicolumn .title-wrapper-with-link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top: 1px solid #C6C6C6;
-      border-bottom: 1px solid #C6C6C6;
-      margin-bottom: 33px;
-    }
-
-    .multicolumn .title {
-      font-family: Axiforma, sans-serif;
-      font-size: 35px;
-      font-weight: 400;
-      line-height: 55.44px;
-      letter-spacing: 0.5em;
-      text-align: center;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-      color: #333333;
-      padding: 50px 0;
-    }
-
-    .multicolumn-card-spacing {
-      margin: unset;
-      padding: unset;
-    }
-
-    .multicolumn-list h3 {
-      font-family: Axiforma, sans-serif;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 25px;
-      text-align: left;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-      color: #3C3C3B;
-    }
-
-    .multicolumn-card__info {
-      padding: unset;
-      padding-top: 20.7px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .multicolumn.background-primary .multicolumn-card {
-      background: unset;
-    }
-
-    .rte>*:last-child {
-      font-family: Axiforma, sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-      color: #919191;
-    }
-    
-    .multicolumn {
-      position: relative;
-    }
-    .background-image-wrapper {
-      position: absolute;
-      top: 37%;
-      left:0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    
-    .background-image-wrapper .background-image-color {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .background-image-wrapper .small-image {
-      position: absolute;
-      top: 51%;
-    }
-
-    @media only screen and (min-width: 1920px) {
-      .background-image-wrapper .small-image {
-         width: 100%;
-      }
-    }
-
-    @media only screen and (max-width: 768px) {
-      .multicolumn-list:not(.slider) {
-        gap:64px;  
-      }
-      
-      .background-image-wrapper {
-          position: absolute;
-          top: 19%;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-      }
-
-      .background-image-wrapper .small-image {
-          position: absolute;
-          top: 76%;
-          right: -17%;
-      }
-
-      .multicolumn .title {
-        font-family: Axiforma, sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 31.68px;
-        letter-spacing: 0.3rem;
-      }
-      
-      .title-wrapper--self-padded-tablet-down, .title-wrapper--self-padded-mobile {
-          padding-left: unset;
-          padding-right: unset;
-          margin-left: 1.5rem;
-          margin-right: 1.5rem;
-      }
-    }
-
-    @media only screen and (max-width: 500px) {
-      .background-image-wrapper .background-image-color {
-          top: 0%;
-      }
-
-      .background-image-wrapper .small-image {
-          right: -94%;
-      }
-    }
-
-    .multicolumn .page-width {
-      padding: unset;
-    }
-  </style>
-{% endif %}
-
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px !important;
-      padding-bottom: {{ section.settings.padding_bottom }}px !important;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
@@ -168,12 +24,6 @@
 -%}
 
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
-   {% if template == "index" %}
-    <div class="background-image-wrapper">
-        <img class="background-image-color" src="{{ "Image 36.png" | asset_url }}" alt="Backgournd Image">
-        <img class="small-image" src="{{ 'Group 7726.png' | asset_url }}" alt="Custom Image"> 
-    </div>
-  {% endif %}
   <div
     class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -527,7 +377,7 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 200,
+      "max": 100,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
