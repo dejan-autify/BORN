@@ -169,7 +169,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 72,
-        "padding_bottom": 100
+        "padding_bottom": 200
       }
     },
     "featured_collection": {
