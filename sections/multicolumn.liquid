@@ -73,7 +73,7 @@
       top: 40%;
       left:0;
       width: 100%;
-      height: 627.06px;
+      height: 100%;
       background: rgb(214, 209, 201);
     }
     @media only screen and (max-width: 768px) {
@@ -109,7 +109,7 @@
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
    {% if template == "index" %}
     <div class="background-image-color">
-        
+        <img src="{{ 'Group 7726.png' | asset_url }}" alt="Custom Image"> 
     </div>
   {% endif %}
   <div
