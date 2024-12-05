@@ -123,9 +123,19 @@
       <!-- Subheading and Content Under Video -->
       {% if section.settings.subheading != blank or section.settings.content != blank %}
       <div class="video-content">
-        {% if section.settings.subheading != blank %}
-          <p class="subheading">{{ section.settings.subheading }}</p>
-        {% endif %}
+          {% if section.settings.subheading_desktop != blank or section.settings.subheading_mobile != blank %}
+              <div class="video-content">
+                <!-- Desktop Subheading -->
+                {% if section.settings.subheading_desktop != blank %}
+                  <p class="subheading desktop-subheading">{{ section.settings.subheading_desktop }}</p>
+                {% endif %}
+                
+                <!-- Mobile Subheading -->
+                {% if section.settings.subheading_mobile != blank %}
+                  <p class="subheading mobile-subheading">{{ section.settings.subheading_mobile }}</p>
+                {% endif %}
+              </div>
+            {% endif %}
         {% if section.settings.content != blank %}
           <div class="content">
             {{ section.settings.content }}
@@ -136,7 +146,7 @@
     </div>
   </div>
 </div>
-
+      
 {% schema %}
 {
   "name": "Video",
@@ -167,8 +177,13 @@
     },
     {
       "type": "text",
-      "id": "subheading",
-      "label": "Subheading Below Video"
+      "id": "subheading_desktop",
+      "label": "Desktop Subheading"
+    },
+    {
+      "type": "text",
+      "id": "subheading_mobile",
+      "label": "Mobile Subheading"
     },
     {
       "type": "richtext",
@@ -210,3 +225,4 @@
   ]
 }
 {% endschema %}
+
