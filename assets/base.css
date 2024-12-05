@@ -3573,3 +3573,7 @@ details-disclosure > details {
       url("Axiforma-Regular.woff") format('woff'),
       url("Axiforma-Regular.ttf") format('truetype');
 }
+
+.multicolumn-list h3 {
+  font-family: Axiforma !important;
+}
