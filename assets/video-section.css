@@ -118,3 +118,14 @@
   text-decoration-skip-ink: none;
   color: #333333;
 }
+
+.video-container .video-content .content {
+  font-family: Axiforma;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #333333;
+}
