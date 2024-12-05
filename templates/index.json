@@ -122,8 +122,9 @@
         "column_63D6xL": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-07-01-0002.png",
+            "title": "Why Zero-Carbon? Glad you asked.",
+            "text": "<p>Gold star gifts for your Christmas lists that don’t compromise your conscience or cost the planet.</p>",
             "link_label": "",
             "link": ""
           }
@@ -131,8 +132,9 @@
         "column_UBgpYQ": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a_1.png",
+            "title": "Announcing our new born® brand ambassador",
+            "text": "<p>Take a look at what’s hot right now in lab-grown jewellery and beyond with the expert eye of born® editor Mary Sloane.</p>",
             "link_label": "",
             "link": ""
           }
