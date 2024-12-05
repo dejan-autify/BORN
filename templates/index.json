@@ -175,14 +175,12 @@
     "video_hdMzYR": {
       "type": "video",
       "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "",
+        "top_heading": "LATEST IN LAB-GROWN",
+        "heading_size": "h0",
+        "subheading": "Lab–GROWN GUIDES",
+        "content": "<p>All you need to know about lab-grown Coloured Diamonds</p>",
         "cover_image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a_2.png",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
+        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
