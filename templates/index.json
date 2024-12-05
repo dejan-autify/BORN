@@ -194,7 +194,8 @@
           "settings": {
             "image": "shopify://shop_images/fashion_girl.png",
             "title": "The Big Five Fall Fashion Trends",
-            "category": "Fashion"
+            "category": "Fashion",
+            "link": ""
           }
         },
         "small_article_i4NRfn": {
@@ -202,7 +203,8 @@
           "settings": {
             "image": "shopify://shop_images/Image_24.png",
             "title": "Born® store manager Jane gives her thoughts on trends in lab-grown",
-            "category": "TRENDING"
+            "category": "TRENDING",
+            "link": ""
           }
         },
         "small_article_WUWpQb": {
@@ -210,7 +212,8 @@
           "settings": {
             "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-07-01-0002_1.png",
             "title": "Born® Features at LDN Fashion Show",
-            "category": "Fashion"
+            "category": "Fashion",
+            "link": ""
           }
         },
         "small_article_9Ya9Up": {
@@ -218,7 +221,8 @@
           "settings": {
             "image": "shopify://shop_images/14-01-01-5025_a.png",
             "title": "Everything you need to know  lab-grown in detail",
-            "category": "LAB-grown guides"
+            "category": "LAB-grown guides",
+            "link": ""
           }
         }
       },
@@ -229,7 +233,7 @@
         "small_article_9Ya9Up"
       ],
       "settings": {
-        "heading": "Born Stories",
+        "heading": "BORN STORTIES",
         "featured_image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-07-01-0002.png",
         "featured_title": "Why Zero-Carbon? Glad you asked.",
         "featured_category": "Lab-Grown Guides"
