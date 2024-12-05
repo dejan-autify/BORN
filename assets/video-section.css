@@ -101,5 +101,8 @@
   .background-image-wrapper .background-image-color {
       top: 0%;
   }
+}
 
+.video-container {
+  background: #FFFFFF;
 }
