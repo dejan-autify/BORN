@@ -168,13 +168,6 @@
     font-size: 30px;
 }
 
-    .title-wrapper--mobile {
-      display: none; /* Hide mobile heading by default */
-    }
-    
-    .title-wrapper--desktop {
-      display: block; /* Show desktop heading by default */
-    }
 }
 
 
