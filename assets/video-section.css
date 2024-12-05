@@ -110,6 +110,14 @@
   padding: 22px 296px;
 }
 
+  .title-wrapper--desktop {
+    display: block;
+  }
+
+  .title-wrapper--mobile {
+    display: none; 
+  }
+
 @media only screen and (min-width: 1920px) {
   .video-container .video-content {
     padding: 22px 120px;
@@ -150,6 +158,13 @@
 .video-section .title-wrapper h2 {
     padding: 30px 0;
   }
+    .title-wrapper--desktop {
+    display: none; /* Hide desktop heading on mobile */
+  }
+
+  .title-wrapper--mobile {
+    display: block; /* Show mobile heading on mobile */
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -172,10 +187,3 @@
 
 
 @media (max-width: 768px) {
-  .title-wrapper--desktop {
-    display: none; /* Hide desktop heading on mobile */
-  }
-
-  .title-wrapper--mobile {
-    display: block; /* Show mobile heading on mobile */
-  }
