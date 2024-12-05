@@ -46,10 +46,17 @@
   {% endif %}
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     
-    <!-- Top Heading -->
-    {% if section.settings.top_heading != blank %}
-      <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.top_heading }}</h2>
+    <!-- Desktop Heading -->
+    {% if section.settings.heading_desktop != blank %}
+      <div class="title-wrapper title-wrapper--desktop{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading_desktop }}</h2>
+      </div>
+    {% endif %}
+
+    <!-- Mobile Heading -->
+    {% if section.settings.heading_mobile != blank %}
+      <div class="title-wrapper title-wrapper--mobile{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading_mobile }}</h2>
       </div>
     {% endif %}
 
