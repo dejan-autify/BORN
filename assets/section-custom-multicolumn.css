@@ -71,6 +71,7 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #333333;
+  cursor: pointer !important;
 }
 
 .multicolumn .button:hover {
