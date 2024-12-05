@@ -247,3 +247,9 @@
 .media--transparent img {
   position: unset !important;
 }
+
+.media--transparent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
