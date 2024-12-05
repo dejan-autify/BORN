@@ -95,6 +95,14 @@
 .multicolumn-list h3,
 .multicolumn-list p {
   margin: 0;
+  font-family: Axiforma, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34.85px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
 }
 
 .multicolumn-card-spacing {
