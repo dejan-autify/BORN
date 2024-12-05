@@ -196,10 +196,28 @@
             "title": "The Big Five Fall Fashion Trends",
             "category": "Fashion"
           }
+        },
+        "small_article_i4NRfn": {
+          "type": "small_article",
+          "settings": {
+            "image": "shopify://shop_images/Image_24.png",
+            "title": "Born® store manager Jane gives her thoughts on trends in lab-grown",
+            "category": "TRENDING"
+          }
+        },
+        "small_article_WUWpQb": {
+          "type": "small_article",
+          "settings": {
+            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-06-01-5013_14-07-01-0002_1.png",
+            "title": "Born® Features at LDN Fashion Show",
+            "category": "Fashion"
+          }
         }
       },
       "block_order": [
-        "small_article_iPceQe"
+        "small_article_iPceQe",
+        "small_article_i4NRfn",
+        "small_article_WUWpQb"
       ],
       "settings": {
         "heading": "Born Stories",
