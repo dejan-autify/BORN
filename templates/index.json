@@ -175,7 +175,8 @@
     "video_hdMzYR": {
       "type": "video",
       "settings": {
-        "top_heading": "LATEST IN LAB-GROWN",
+        "heading_desktop": "LATEST IN LAB-GROWN",
+        "heading_mobile": "LAB-GROWN",
         "heading_size": "h0",
         "subheading": "Lab–GROWN GUIDES",
         "content": "<p>All you need to know about lab-grown Coloured Diamonds</p>",
