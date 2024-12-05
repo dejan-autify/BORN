@@ -134,3 +134,8 @@
   padding: 22px 296px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .video-container .video-content {
+    padding: 22px 193px;
+}
+}
