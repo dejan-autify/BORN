@@ -3568,12 +3568,12 @@ details-disclosure > details {
 }
 
 @font-face {
-  font-family: 'Axiforma' !important;
+  font-family: "Axiforma" !important;
   src:url("Axiforma-Regular.woff2") format('woff2'),
       url("Axiforma-Regular.woff") format('woff'),
       url("Axiforma-Regular.ttf") format('truetype');
 }
 
 .multicolumn-list h3 {
-  font-family: Axiforma !important;
+  font-family: "Axiforma" !important;
 }
