@@ -129,3 +129,8 @@
   text-decoration-skip-ink: none;
   color: #333333;
 }
+
+.video-container .video-content {
+  padding: 74px 367px 75px;
+}
+
