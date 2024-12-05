@@ -72,12 +72,12 @@
   text-decoration-skip-ink: none;
   color: #333333;
 }
-
+/* 
 @media screen and (min-width: 750px) {
   .multicolumn .button {
     margin-top: 4rem;
   }
-}
+} */
 
 .multicolumn-list {
   margin-top: 0;
