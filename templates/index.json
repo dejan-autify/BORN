@@ -66,6 +66,7 @@
         "column_zNKGKb": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Ellipse_217.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -75,6 +76,7 @@
         "column_aXNwNc": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -84,6 +86,7 @@
         "column_hEVYWU": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_2357898755.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
