@@ -106,3 +106,15 @@
 .video-container {
   background: #FFFFFF;
 }
+
+.video-container .video-content .subheading {
+  font-family: Axiforma;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #333333;
+}
