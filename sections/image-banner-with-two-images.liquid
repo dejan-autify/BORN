@@ -73,6 +73,9 @@
 
 .button-container {
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -88,7 +91,7 @@
   text-align: center;
   color: #FFFFFF;
   cursor: pointer;
-  display: block;
+  display: flex;
 }
 
 .anchor {
@@ -100,7 +103,7 @@
   text-decoration-line: underline;
   text-decoration-style: solid;
   color: #FFFFFF;
-  display: block;
+  display: flex;
 }
 
 .button:hover {
@@ -211,11 +214,11 @@
       const desktopButton = container.querySelector('[data-desktop="true"]');
 
       if (isMobile) {
-        mobileButton.style.display = 'block';
+        mobileButton.style.display = 'flex';
         desktopButton.style.display = 'none';
       } else {
         mobileButton.style.display = 'none';
-        desktopButton.style.display = 'block';
+        desktopButton.style.display = 'flex';
       }
     });
   }
