@@ -271,3 +271,9 @@
   justify-content: center;
   align-items: center;
 }
+
+.middle-svg {
+  position: absolute;
+  top: 40%;
+  left: 46%;
+}
