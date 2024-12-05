@@ -103,16 +103,12 @@
   display: inline-block;
 }
 
-.button:after {
-  box-shadow: unset !important;
-}
-
 .button:hover {
   background: #FFFFFF;
   color: #333333;
 }
 
-/* Differentiation for Mobile */
+/* Responsive design for mobile */
 @media (max-width: 768px) {
   .banner__images {
     flex-direction: column; /* Stack the images vertically */
@@ -120,25 +116,6 @@
 
   .banner__image {
     max-width: 100%; /* Make images take full width */
-  }
-
-  .button-container .button {
-    display: block; /* Mobile-specific button styles */
-  }
-
-  .button-container .anchor {
-    display: none; /* Hide anchor on mobile */
-  }
-}
-
-/* Differentiation for Desktop */
-@media (min-width: 769px) {
-  .button-container .button {
-    display: none; /* Hide button on desktop */
-  }
-
-  .button-container .anchor {
-    display: block; /* Desktop-specific anchor styles */
   }
 }
 
@@ -180,8 +157,12 @@
           </div>
           <h2 class="banner__heading">{{ section.settings.heading_1 }}</h2>
           <div class="button-container">
-            <button class="button">{{ section.settings.button_text_1 }}</button>
-            <a href="#" class="anchor">Learn More</a>
+            <a href="{{ section.settings.button_link_1 }}" class="button" data-mobile="true">
+              {{ section.settings.button_text_1 }}
+            </a>
+            <button class="button" data-desktop="true" style="display: none;">
+              {{ section.settings.button_text_1 }}
+            </button>
           </div>
         </div>
       </div>
@@ -203,11 +184,95 @@
           </div>
           <h2 class="banner__heading">{{ section.settings.heading_2 }}</h2>
           <div class="button-container">
-            <button class="button">{{ section.settings.button_text_2 }}</button>
-            <a href="#" class="anchor">Learn More</a>
+            <a href="{{ section.settings.button_link_2 }}" class="button" data-mobile="true">
+              {{ section.settings.button_text_2 }}
+            </a>
+            <button class="button" data-desktop="true" style="display: none;">
+              {{ section.settings.button_text_2 }}
+            </button>
           </div>
         </div>
       </div>
     {%- endif -%}
   </div>
 </div>
+
+<script>
+  // JavaScript to toggle button behavior based on screen size
+  function updateButtonsForDevice() {
+    const isMobile = window.innerWidth <= 768; // Define mobile breakpoint
+
+    document.querySelectorAll('.button-container').forEach(container => {
+      const mobileButton = container.querySelector('[data-mobile="true"]');
+      const desktopButton = container.querySelector('[data-desktop="true"]');
+
+      if (isMobile) {
+        mobileButton.style.display = 'inline-block';
+        desktopButton.style.display = 'none';
+      } else {
+        mobileButton.style.display = 'none';
+        desktopButton.style.display = 'inline-block';
+      }
+    });
+  }
+
+  // Initial load
+  updateButtonsForDevice();
+
+  // Update on window resize
+  window.addEventListener('resize', updateButtonsForDevice);
+</script>
+
+{% schema %}
+{
+  "name": "Banner with Two Images",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "First Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "label": "Heading for First Image"
+    },
+    {
+      "type": "text",
+      "id": "small_text_1",
+      "label": "Small Text for First Image"
+    },
+    {
+      "type": "text",
+      "id": "button_text_1",
+      "label": "Button Text for First Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Second Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "Heading for Second Image"
+    },
+    {
+      "type": "text",
+      "id": "small_text_2",
+      "label": "Small Text for Second Image"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "label": "Button Text for Second Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner With Two Images",
+      "category": "Banner"
+    }
+  ]
+}
+{% endschema %}
