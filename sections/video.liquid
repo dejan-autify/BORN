@@ -130,18 +130,16 @@
       <!-- Subheading and Content Under Video -->
       {% if section.settings.subheading != blank or section.settings.content != blank %}
       <div class="video-content">
-          {% if section.settings.subheading_desktop != blank or section.settings.subheading_mobile != blank %}
-              <div class="video-content">
-                {% if section.settings.subheading != blank %}
-                  <p class="subheading">{{ section.settings.subheading }}</p>
-                {% endif %}
-              </div>
-            {% endif %}
+        <div class="video-content">
+          {% if section.settings.subheading != blank %}
+            <p class="subheading">{{ section.settings.subheading }}</p>
+          {% endif %}
         {% if section.settings.content != blank %}
           <div class="content">
             {{ section.settings.content }}
           </div>
         {% endif %}
+        </div>
       </div>
       {% endif %}
     </div>
