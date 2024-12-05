@@ -1,6 +1,8 @@
 <style>
 .born-stories {
   background: #FFFFFF;
+  position: relative; 
+  z-index: 10;
 }
 .born-stories-section {
   margin: 50px auto;
@@ -144,7 +146,7 @@
 }
 </style>
 
-<div class="born-stories-section" style="position: relative; z-index: 10;">
+<div class="born-stories-section">
   <div class="container">
     <!-- Section Heading -->
     {% if section.settings.heading != blank %}
