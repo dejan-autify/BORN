@@ -7,6 +7,7 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  color: #333333;
 }
 
 .multicolumn.no-heading .title {
@@ -109,7 +110,8 @@
 
 .multicolumn-list__item.center .media--adapt,
 .multicolumn-list__item .media--adapt .multicolumn-card__image {
-  width: auto;
+    width: 129px;
+    height: 130px;
 }
 
 .multicolumn-list__item.center .media--adapt img {
