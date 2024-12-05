@@ -142,8 +142,9 @@
         "column_HYyJf8": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013_14-01-01-5024_14-01-01-5008_14-01-01-5074_14-01-01-5016_Image_2.png",
+            "title": "How to Choose the Right Diamond Shape for Your Hand Size",
+            "text": "<p>While personal style plays a significant role in selecting the perfect diamond shape, the size and proportions of …</p>",
             "link_label": "",
             "link": ""
           }
