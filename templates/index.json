@@ -99,6 +99,7 @@
         "column_aXNwNc",
         "column_hEVYWU"
       ],
+      "disabled": true,
       "settings": {
         "title": "Born® Lab-grown Diamonds",
         "heading_size": "h1",
@@ -107,6 +108,62 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
+        "button_label": "Learn More",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_multicolumn_L3cX8n": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_3qD7az": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_217.png",
+            "title": "Zero Emissions",
+            "text": "<p>All born® lab-grown diamonds are created with sustainable, zero-emissions energy<br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zEVz8M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Fields_x_Colin_Judge_-_14-05-01-5013___14-01-01-5099_a.png",
+            "title": "Cultivating Quality",
+            "text": "<p>Only the highest calibre of lab-grown diamonds make the cut<br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nBUMKY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_2357898755.png",
+            "title": "At your service",
+            "text": "<p>Our aftercare service at born®<br/>is second to none</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_3qD7az",
+        "column_zEVz8M",
+        "column_nBUMKY"
+      ],
+      "settings": {
+        "title": "Born® Lab-grown Diamonds",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
         "button_label": "Learn More",
         "button_link": "",
         "color_scheme": "",
@@ -211,6 +268,7 @@
     "image_banner_with_two_images_3tpxqa",
     "custom_text_carousal_MhTYP7",
     "multicolumn_ywpAtF",
+    "custom_multicolumn_L3cX8n",
     "image_banner",
     "featured_collection"
   ]
