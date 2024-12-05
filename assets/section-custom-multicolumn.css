@@ -76,6 +76,7 @@
 
 .multicolumn .button:hover {
   background: #333333;
+  border: 2px solid #333333;
   color: #FFFFFF;
 }
 /* 
