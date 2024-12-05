@@ -212,12 +212,21 @@
             "title": "Born® Features at LDN Fashion Show",
             "category": "Fashion"
           }
+        },
+        "small_article_9Ya9Up": {
+          "type": "small_article",
+          "settings": {
+            "image": "shopify://shop_images/14-01-01-5025_a.png",
+            "title": "Everything you need to know  lab-grown in detail",
+            "category": "LAB-grown guides"
+          }
         }
       },
       "block_order": [
         "small_article_iPceQe",
         "small_article_i4NRfn",
-        "small_article_WUWpQb"
+        "small_article_WUWpQb",
+        "small_article_9Ya9Up"
       ],
       "settings": {
         "heading": "Born Stories",
