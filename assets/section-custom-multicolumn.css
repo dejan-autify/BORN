@@ -56,7 +56,7 @@
 }
 
 .multicolumn .button {
-  margin-top: 41.47px;
+  margin-top: 41.47px !important;
   opacity: 1 !important;
   margin-top: 1.5rem;
   width: 295px;
