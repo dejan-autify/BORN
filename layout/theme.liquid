@@ -249,15 +249,15 @@
         font-weight: var(--font-body-weight);
       }
 
-      @font-face {
-        font-family: 'Axiforma';
-        src: local('Axiforma Redular'), local('Axiforma-Redular'),
-            url({{"Axiforma-Regular.woff2" | asset_url }}) format('woff2'),
-            url({{"Axiforma-Regular.woff" | asset_url }}) format('woff'),
-            url({{"Axiforma-Regular.ttf" | asset_url }}) format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
+@font-face {
+    font-family: 'Axiforma';
+    src: local('Axiforma Redular'), local('Axiforma-Redular'),
+        url('Axiforma-Regular.woff2') format('woff2'),
+        url('Axiforma-Regular.woff') format('woff'),
+        url('Axiforma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
       
       @media screen and (min-width: 750px) {
         body {
